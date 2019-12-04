@@ -42,6 +42,14 @@
       <label>How much should the  day/night effect be promonent?</label>
       <default>43200</default>
     </entry>
+        <entry name="TransitionList" type="StringList">
+      <label>Images list to map the transition list to</label>
+      <default>43200</default>
+    </entry>
+    <entry name="ImagesList" type="StringList">
+      <label>Images list to map the transition list to</label>
+      <default>43200</default>
+    </entry>
   </group>
 
 </kcfg>
