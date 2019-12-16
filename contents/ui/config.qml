@@ -155,28 +155,29 @@
                  to: 86400
              }
          }
-         
-         Row {
-             id: previewRow
-             spacing: units.largeSpacing / 2
-             
-             Item {
-                 width: height*(Screen.width/Screen.height)
-                 height: configColumn.height 
-                 BackgoundComponent {
-                     source: root.cfg_Image
-                     blurEnabled: blurCheckBox.checked
-                     bkColor: root.cfg_Color
-                     blurRadius: root.cfg_BlurRadius * (height/Screen.height*2)
-                     fillMode: root.cfg_FillMode
-                     dayNightEnabled: root.cfg_DayNightColoring
-                     dayNightEffect: root.cfg_DayNightEffect
-                     dayNightOffset:root.cfg_DayNightOffset
-                     
-                 }
-             }
-         }
+        Row {
+			 id: previewRow
+			 spacing: units.largeSpacing / 2
+
+			 Item {
+				 width: height*(Screen.width/Screen.height)
+				 height: configColumn.height
+				 BackgoundComponent {
+					 source: root.cfg_Image
+					 blurEnabled: blurCheckBox.checked
+					 bkColor: root.cfg_Color
+					 blurRadius: root.cfg_BlurRadius * (height/Screen.height*2)
+					 fillMode: root.cfg_FillMode
+					 dayNightEnabled: root.cfg_DayNightColoring
+					 dayNightEffect: root.cfg_DayNightEffect
+					 dayNightOffset:root.cfg_DayNightOffset
+
+				 }
+			 }
+		 } 
+        
      }
+
      
      Row {
          id: imageSelectRow
