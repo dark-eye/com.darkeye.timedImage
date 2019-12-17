@@ -21,13 +21,15 @@ Item {
     
     onTimeoffestForDayNightChanged:{
         console.log(timeoffestForDayNight);
+        console.log( new Date((timeoffestForDayNight * 86400000) - (43200*1000)) );
         console.log(dayNightOffset);
     }
     
     Timer {
         id:timeOffsetUpdateTimer
         interval:60000
-        onTriggered: backgroundRoot.timeoffestForDayNight = (Date.now()+(dayNightOffset*1000)+(new Date()).getTimezoneOffset())%86400000/86400000
+        running:true
+        onTriggered: backgroundRoot.timeoffestForDayNight = Qt.binding( function () { return  (Date.now()+(dayNightOffset*1000)+(new Date()).getTimezoneOffset())%86400000/86400000; });
     }
     
     Rectangle {
