@@ -19,12 +19,12 @@ Item {
 
     anchors.fill:parent
     
-    onTimeoffestForDayNightChanged:{
-        console.log(timeoffestForDayNight);
-        console.log( new Date((timeoffestForDayNight * 86400000) - (43200*1000)) );
-        console.log(dayNightOffset);
-    }
-    
+//     onTimeoffestForDayNightChanged:{
+//         console.log(timeoffestForDayNight);
+//         console.log( new Date((timeoffestForDayNight * 86400000) - (43200*1000)) );
+//         console.log(dayNightOffset);
+//     }
+
     Timer {
         id:timeOffsetUpdateTimer
         interval:60000
@@ -84,7 +84,7 @@ Item {
                             lowp vec4 shadingEffect = texture2D(shadingTex, timePos);
                             float satur = dot(tex.rgb, vec3(0.2126, 0.7152, 0.0722 ));
                             gl_FragColor = (lerp( tex.rgba ,vec4(satur,satur,satur,1) , desturateEffect.r ) + 
-                                        (( coloringEffect.rgba - vec4(0.5, 0.5, 0.5, 1) ) * effectStrength)) * 
+                                        (( coloringEffect.rgba - vec4(0.75, 0.75, 0.75, 1) ) * effectStrength)) * 
                                         lerp( vec4(1,1,1,1), shadingEffect.rgba, effectStrength ) *
                                         qt_Opacity;
                         }
