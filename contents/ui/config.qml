@@ -15,7 +15,7 @@
      property alias  cfg_BlurRadius: blurRadiusSld.value
      property alias  cfg_Color: colorDlg.color
      property int    cfg_FillMode: Image.PreserveAspectFit
-    property string cfg_Image: null
+     property string cfg_Image: null
      property alias  cfg_DayNightColoring : dayNightColoringChkBox.checked
      property alias  cfg_DayNightEffect: dayNightColorEffectSld.value
      property alias  cfg_DayNightOffset: dayNightColoroffsetSld.value

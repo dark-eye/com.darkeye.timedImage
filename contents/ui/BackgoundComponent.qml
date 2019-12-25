@@ -25,12 +25,6 @@ Item {
 //         console.log(dayNightOffset);
 //     }
 
-    Timer {
-        id:timeOffsetUpdateTimer
-        interval:60000
-        running:true
-        onTriggered: backgroundRoot.timeoffestForDayNight = Qt.binding( function () { return  (Date.now()+(dayNightOffset*1000)+(new Date()).getTimezoneOffset())%86400000/86400000; });
-    }
     
     Rectangle {
         id:bkRect
