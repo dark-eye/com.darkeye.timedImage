@@ -17,7 +17,6 @@ Item {
         running:true
         onTriggered: {
             backgroundComponent.timeoffestForDayNight =  (Date.now()+(backgroundComponent.dayNightOffset*1000)+(new Date()).getTimezoneOffset())%86400000/86400000;
-            console.log(backgroundComponent.timeoffestForDayNight);
         }
     }
     
