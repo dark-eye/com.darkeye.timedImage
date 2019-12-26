@@ -1,24 +1,24 @@
-# Animated Image wallpaper for KDE Plasma Desktop
+# Day/Night Tinted Image wallpaper for KDE Plasma Desktop
 
 # Installtion
 ```
-git clone git@github.com:dark-eye/com.darkeye.animatedImage.git
-plasmapkg2 --install com.darkeye.animatedImage
+git clone git@github.com:dark-eye/com.darkeye.timedImage.git
+plasmapkg2 --install com.darkeye.timedImage
 ```
 
 # Development
 
 Just fork or clone the project :
 
-`git clone git@github.com:dark-eye/com.darkeye.animatedImage.git`
+`git clone git@github.com:dark-eye/com.darkeye.timedImage.git`
 
 Then you can apply/install you're changes by running : 
 
-`plasmapkg2 --install com.darkeye.animatedImage`
+`plasmapkg2 --install com.darkeye.timedImage`
 
 And remove the installed wallpaper with
 
-`plasmapkg2 --remove com.darkeye.animatedImage`
+`plasmapkg2 --remove com.darkeye.timedImage`
 
 
 ## General structure and notes:
@@ -32,15 +32,13 @@ And remove the installed wallpaper with
   all `*.qmlc` files.
 
 ## TODOs
-- Find a better function for blur radius mapping from full screen to configuration preview
+- Better day/night Tint
 
 # Credits
 
 This code was based on :
 
-- Inspired mainly by com.nerdyweekly.animated wallpaper  that can be found [here](https://github.com/nhanb/com.nerdyweekly.animated)
 - com.github.zren.inactiveblur the can be found [here](https://github.com/Zren/plasma-wallpapers/tree/master/inactiveblur)
-- Default animation by [Floris Kloet](https://livingstills.tumblr.com/)
 
 ![donation widget](http://img.shields.io/liberapay/receives/darkeye.svg?logo=liberapay)
 If you can and found this software helpful please [Donate](https://liberapay.com/darkeye/). 
