@@ -28,7 +28,7 @@
     </entry>
     <entry name="DayNightColoring" type="Bool">
       <label>Should we apply day/night effect based on time of day?</label>
-      <default>false</default>
+      <default>true</default>
     </entry>
     <entry name="DayNightEffect" type="Double">
       <label>How much should the  day/night effect be promonent?</label>

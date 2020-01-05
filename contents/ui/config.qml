@@ -41,6 +41,22 @@
              id:configColumn
              anchors.verticalCenter: parent.verticalCenter
              
+             QtControls.CheckBox {
+                 id: dayNightColoringChkBox
+                 
+                 text:  i18nd("plasma_applet_org.kde.image","Enable Day/Night Tinting : %1 % ", dayNightColorEffectSld.value*100);
+             }
+             QtControls.Slider {
+                 enabled: dayNightColoringChkBox.checked
+                 id:dayNightColorEffectSld
+                 live:true
+                 stepSize: 0.01
+                 snapMode:Slider.NoSnap
+                 from: 0.01
+                 value: 0.1
+                 to: 1
+             }
+             
              Row {
                  spacing: units.largeSpacing
                  QtDialogs.ColorDialog {
@@ -129,20 +145,6 @@
                          }
                      }
                  }
-             }
-             QtControls.CheckBox {
-                 id: dayNightColoringChkBox
-                 text:  i18nd("plasma_applet_org.kde.image","Enable Day/Night Tinting : %1 % ", dayNightColorEffectSld.value*100);
-             }
-             QtControls.Slider {
-                 enabled: dayNightColoringChkBox.checked
-                 id:dayNightColorEffectSld
-                 live:true
-                 stepSize: 0.01
-                 snapMode:Slider.NoSnap
-                 from: 0.01
-                 value: 0.1
-                 to: 1
              }
              
              QtControls.Slider {
