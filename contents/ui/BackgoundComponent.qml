@@ -1,4 +1,4 @@
-import QtQuick 2.11
+import QtQuick 2.9
 import org.kde.plasma.core 2.0 as PlasmaCore
 import QtGraphicalEffects 1.0
 

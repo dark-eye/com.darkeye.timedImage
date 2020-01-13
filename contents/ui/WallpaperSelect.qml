@@ -25,10 +25,10 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import QtQuick 2.11
+import QtQuick 2.9
 import org.kde.plasma.core 2.0 as PlasmaCore
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 2.12 as QtControls
+import QtQuick.Controls 2.9 as QtControls
 import QtQuick.Dialogs 1.1 as QtDialogs
 import org.kde.kcm 1.1 as KCM
 
