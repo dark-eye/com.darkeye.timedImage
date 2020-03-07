@@ -7,7 +7,7 @@ import QtQuick.Window 2.0 // for Screen
 import QtGraphicalEffects 1.0
 import org.kde.plasma.wallpapers.image 2.0 as Wallpaper
 import org.kde.kcm 1.1 as KCM
-import org.kde.newstuff 1.62 as NewStuff
+import org.kde.newstuff 1.1 as NewStuff
  
  Column {
      id: root
@@ -201,7 +201,14 @@ import org.kde.newstuff 1.62 as NewStuff
              text: i18nd("plasma_applet_org.kde.image","Open...")
              onClicked: imageWallpaper.showFileDialog();
          }
+         QtControls.Button {
+            visible: imageWallpaper.getNewWallpaper !== undefined
+			icon.name: "get-hot-new-stuff"
+			text: i18nd("plasma_applet_org.kde.image","Get New Wallpapers...")
+			onClicked: imageWallpaper.getNewWallpaper();
+		 }
 		 NewStuff.Button {
+            visible: imageWallpaper.getNewWallpaper === undefined
             configFile: "wallpaper.knsrc"
             text: i18nd("plasma_wallpaper_org.kde.image", "Get New Wallpapers...")
             viewMode: NewStuff.Page.ViewMode.Preview
